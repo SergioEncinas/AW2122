@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Aplicaciones Web SE</title>
+    <style>
+        .tablas {  
+          margin: auto;
+          width: 50%;
+          padding: 10px; }
+
+        .tops {
+          margin: auto;
+          width: 50%;
+          padding: 5px;
+          background-color: rgb(85, 166, 204);
+        }
+        
+        .tops > h1, .top {
+          margin: auto;
+          padding: 5px;
+        }
+        
+        .top {
+          background: white;
+        }
+        
+        .default{
+          margin: auto;
+          width: 50%;
+          padding: 10px;
+          border:1px solid;
+          border-color: black ;
+        }
+        table, th, td {
+          margin: auto;
+          border:1px solid black;
+                }
+        </style>
+        </head>
+
+        <body>
+          <!--Tabla1-->
+
+          <h1 style="text-align: center;">Tabla 1</h1>
+          <table class= "table">
+            <tr>
+                <td>Celda</td>
+                  <td colspan="4">Celda</td>
+                    <td>Celda</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Celda</td>
+                  <td>Celda</td>
+                    <td>Celda</td>
+                      <td>Celda</td>
+                        <td>Celda</td>  
+                          <td rowspan= "4">Celda</td>     
+            <tr>
+                <td>Celda</td>
+                  <td>Celda</td>
+                    <td>Celda</td>
+                      <td>Celda</td>
+            </tr>
+                  <br>
+            <tr>
+                <td>Celda</td>
+                  <td>Celda</td>
+                    <td>Celda</td>
+                      <td>Celda</td>
+            </tr>
+            <tr>
+                <td>Celda</td>
+                  <td>Celda</td>
+                    <td>Celda</td>
+                      <td>Celda</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Celda</td>
+                  <td>Celda</td>
+                    <td>Celda</td>
+                      <td>Celda</td>
+                        <td rowspan="3"></td>
+                          <td rowspan="3">Celda</td>
+            </tr>
+            <tr>
+                <td>Celda</td>
+                  <td>Celda</td>
+                    <td>Celda</td>
+            </tr>
+            <tr>
+                <td>Celda</td>
+                  <td>Celda</td>
+                    <td>Celda</td>
+            </tr>
+          </table>   
+                  <br>
+      
+            <!--Tabla2-->
+      
+          <h1 style="text-align: center;">Tabla 2</h1>
+            <table class="table">
+              <tr>
+                <td>Celda</td>
+                  <td colspan="2">Celda</td>
+                    <td>Celda</td>
+                      <td>Celda</td>
+            </tr>
+            <tr>
+                <td>Celda</td>
+                  <td colspan="2">Celda</td>
+                    <td>Celda</td>
+                      <td>Celda</td>
+            </tr>
+            <tr>
+                <td>Celda</td>
+                  <td colspan="2">Celda</td>
+                    <td>Celda</td>
+                      <td>Celda</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Celda</td>
+                  <td>Celda</td>
+                    <td>Celda</td>
+                      <td rowspan="3">Celda</td>
+                        <td rowspan="3">Celda</td>
+              <tr>
+                <td>Celda</td>
+                  <td>Celda</td>
+              </tr>
+              <tr>
+                <td rowspan="3">Celda</td>
+                  <td rowspan="3">Celda</td>
+              </tr>
+          </table>
+      
+            <!--Tabla3-->
+      
+          <h1 style="text-align: center;">Tabla 3</h1>
+            <table class="table">
+              <tr>
+                <td colspan="4">alfa</td>
+                  <td>bravo</td>
+                    <td rowspan="2">charlie</td>
+              </tr>
+              <tr>
+                <td>delta</td>
+                  <td colspan="2">echo</td>
+                    <td>foxtrot</td>
+                      <td>golf</td>
+              </tr>
+              <tr>
+                <td>hotel</td>
+                  <td colspan="4" rowspan="2">india</td>
+                    <td>juliet</td>
+              </tr>
+              <tr>
+                <td>kilo</td>
+                  <td>lima</td>
+              </tr>
+              <tr>
+                <td>mike</td>
+                  <td colspan="2">november</td>
+                    <td>oscar</td>
+                      <td>papa</td>
+                        <td>quebec</td>
+              </tr>
+                </table>
+      
+          <!--Tabla 4-->
+      
+        <h1 style="text-align: center;">Tabla 4</h1>
+          <table>
+            <tr>
+              <th>Level 1</th>
+                <th>Level 2</th>
+                  <th>Level 3</th>
+                    <th>Info</th>
+                      <th>Name</th>
+            </tr>
+            <tr>
+              <td rowspan="6">System</td>
+                <td rowspan="4">System Apps</td> 
+                  <td rowspan="3">SystemEnv</td>
+                    <td>App Test</td>
+                      <td>foo</td>
+            </tr>
+            <tr>
+              <td>App Memory</td>
+                <td>Foo</td>
+            </tr>
+            <tr>
+              <td>App Test</td>
+                <td>Bar</td>
+            </tr>
+            <tr>
+              <td>SystemEnv2</td>
+                <td>App Test</td>
+                 <td>Bar</td>
+            </tr>
+              <td rowspan="2">System Memory</td>
+                <td rowspan="2">Memory Test</td>
+                  <td>Memory Func</td>
+                    <td>Foo</td>
+            <tr>
+              <td>App Test</td>
+                <td>Foo</td>
+            </tr>
+              </table>
+
+            <!--Tabla 5-->
+
+    <h1 style="text-align: center;">Tabla 5</h1>
+
+    <table class="tabla5">Resultados Globales
+      <tr>
+        <th class="th5" colspan="4">Curso 2019/2010</th>
+      </tr>
+      <tr>
+        <th class="td5" colspan="2">1º ESO - A</th>
+          <th class="th5" colspan="2">1º ESO - B</th>
+      </tr>
+      <tr>
+        <td class="td5" >Aprobados</td>
+          <td class="td5" >Suspensos</td>
+            <td class="td5" >Aprobados</td>
+              <td class="td5" >Suspensos</td>
+      </tr>
+      <tr>
+        <td class="td5" >68%</td>
+        <td class="td5" >57%</td>
+        <td class="td5" >32%</td>
+        <td class="td5" >43%</td>
+      </tr>
+    </table>
+            </body>
+            </html>
