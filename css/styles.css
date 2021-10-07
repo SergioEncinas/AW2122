@@ -1,14 +1,14 @@
-/**
- * CSS Swinging Panel Menu
- */
-
- * {
+* {
     margin: 0; 
 		padding: 0;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+
+	/**
+ * CSS Swinging Panel Menu
+ */
 
 	body {
 		padding: 30px; 
@@ -44,9 +44,9 @@
 		float: left;
 		width: 100%;
 		padding: 0 40px;
-		border-radius: 3px;
+		border-radius: 10px;
 		box-shadow: inset 0 1px 1px rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.15);
-		background: #ccc; 
+		background: rgb(255, 255, 255); 
 	}
 
 	#menu, #menu ul {
@@ -281,7 +281,7 @@
 
 	/*BUSCADOR*/
 
-	.demo, .demo-2 {
+	*.demo, .demo-2 {
     position:relative;
     height:100px;
     width:500px;
@@ -294,7 +294,7 @@
 .demo .form-search input[type=text],
 .demo-2 .form-search input[type=text] {
     -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
+    -webkit-boxsizing: content-box;
     font-family: inherit;
     font-size: 100%;
     border: solid 1px #ccc;
