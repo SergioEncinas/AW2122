@@ -1,0 +1,468 @@
+        body {
+        padding: 30px 100px;
+        font-family: "Helvetica Neue", helvetica, arial; 
+    }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* MENÚ CSS */
+
+#container {
+    position: relative;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    left: 32.1%;
+    width: 48px;
+    border-radius: 40px;
+
+    
+}
+
+#container:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#menu {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 0 40px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.15);
+    background: #ccc; 
+}
+
+#menu, #menu ul {
+    list-style: none;
+}
+
+#menu > li {
+    float: left;
+    position: relative;
+    border-right: 1px solid rgba(0,0,0,.1);
+    box-shadow: 1px 0 0 rgba(255,255,255,.25);
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+}
+
+#menu > li:first-child {
+    border-left: 1px solid rgba(255,255,255,.25);
+    box-shadow: -1px 0 0 rgba(0,0,0,.1), 1px 0 0 rgba(255,255,255,.25);
+}
+
+#menu > li:first-child:hover > a {
+border-radius: 3px 0 0 3px;
+}
+
+#menu li.search {
+    border-right: none;
+    box-shadow: none;
+}
+
+#menu a {
+    display: block;
+    position: relative;
+    z-index: 10;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    color: rgba(75,75,75,1);
+    line-height: 1;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -.05em;
+    background: transparent;		
+    text-shadow: 0 1px 1px rgba(255,255,255,.9);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+
+}
+
+#menu > li:hover > a {
+    background: #333;
+    color: rgba(0,223,252,1);
+    text-shadow: none;
+}
+
+#menu li ul  {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: transparent;
+    overflow: hidden;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+#menu li:hover ul {
+    padding: 15px 0;
+    background: #333;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 1px 1px 7px rgba(0,0,0,.5);
+    -webkit-animation-name: swingdown;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-name: swingdown;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: ease;
+    -o-animation-name: swingdown;
+    -o-animation-duration: 1s;	
+    -o-animation-timing-function: ease;
+    -ms-animation-name: swingdown;
+    -ms-animation-duration: 1s;	
+    -ms-animation-timing-function: ease;
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@-webkit-keyframes swingdown {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotateX(90deg);
+    }
+
+    30% {			
+        -webkit-transform: rotateX(-20deg);
+        -webkit-animation-timing-function: ease-in-out;
+    }
+
+    65% {
+        -webkit-transform: rotateX(20deg);
+        -webkit-animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0);
+        -webkit-animation-timing-function: ease-in-out;
+    }
+}
+
+@-moz-keyframes swingdown {
+    0% {
+        opacity: 1;
+        -moz-transform: rotateX(90deg);
+    }
+
+    30% {			
+        -moz-transform: rotateX(-20deg);
+        -moz-animation-timing-function: ease-in-out;
+    }
+
+    65% {
+        -moz-transform: rotateX(20deg);
+        -moz-animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        -moz-transform: rotateX(0);
+        -moz-animation-timing-function: ease-in-out;
+    }
+}
+
+@-o-keyframes swingdown {
+    0% {
+        opacity: 1;
+        -o-transform: rotateX(90deg);
+    }
+
+    30% {			
+        -o-transform: rotateX(-20deg);
+        -o-animation-timing-function: ease-in-out;
+    }
+
+    65% {
+        -o-transform: rotateX(20deg);
+        -o-animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        -o-transform: rotateX(0);
+        -o-animation-timing-function: ease-in-out;
+    }
+}
+
+@-ms-keyframes swingdown {
+    0% {
+        opacity: 1;
+        -ms-transform: rotateX(90deg);
+    }
+
+    30% {			
+        -ms-transform: rotateX(-20deg);
+        -ms-animation-timing-function: ease-in-out;
+    }
+
+    65% {
+        -ms-transform: rotateX(20deg);
+        -ms-animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        -ms-transform: rotateX(0);
+        -ms-animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes swingdown {
+    0% {
+        opacity: 1;
+        transform: rotateX(90deg);
+    }
+
+    30% {			
+        transform: rotateX(-20deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    65% {
+        transform: rotateX(20deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        transform: rotateX(0);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+#menu li li a {
+    padding-left: 15px;
+    font-weight: 400;
+    color: #ddd;
+    text-shadow: none;
+    border-top: dotted 1px transparent;
+    border-bottom: dotted 1px transparent;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    -ms-transition: all .15s linear;
+    transition: all .15s linear;
+}
+
+#menu li li a:hover {
+    color: rgba(0,223,252,1);
+    border-top: dotted 1px rgba(255,255,255,.15);
+    border-bottom: dotted 1px rgba(255,255,255,.15);
+    background: rgba(0,223,252,.02);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* HEADER */
+
+header {
+background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+text-align: center;
+width: 100%;
+height: auto;
+overflow: hidden;
+border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+width: 100%;
+height: 100%;
+padding: 50px;
+color: rgb(0, 0, 0);
+text-shadow: 1px 1px 1px rgb(155, 155, 155);
+  background-image: linear-gradient( 135deg, #1633d6a6 20%, #08e0fd85 100%);
+  z-index: 50;
+
+}
+
+h1 {
+font-family: 'Dancing Script', cursive;
+font-size: 80px;
+margin-bottom: 30px;
+}
+
+h3, p {
+font-family: 'Open Sans', sans-serif;
+margin-bottom: 30px;
+}
+
+h4, h5, h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 30px;
+    }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* CAJA */
+
+.box  {
+
+    border-radius: 5% 5% 0 0;
+    background-image: linear-gradient( 135deg, #22b8dd6b 20%, #0151ffbd 100%);
+    
+    }
+    .overlay{
+    width: 100%;
+    height: 2250px;
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);}    
+
+    /* ENUNCIADOS */
+
+.enunciado  {
+    border-radius: 15%;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+    /* DIVS EJ. 1 */
+
+.ej1caja1 {
+    width: 30%;
+    height: 150px;
+    background-color: rgb(223, 223, 241);
+
+}
+
+.ej1caja2 {
+    width: 30%;
+    height: 150px;
+    background-color: rgb(47, 255, 151);
+}
+
+    /* DIVS EJ. 2 */
+
+.ej2 {
+    display: flex;}
+
+.ej2caja1 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(223, 223, 241);
+}
+
+.ej2caja2 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(47, 255, 151);
+}
+
+    /* DIVS EJ. 3 */
+
+.ej3caja1 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(223, 223, 241);
+    float: left;
+}
+
+.ej3caja2 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(47, 255, 151);
+    float: right;
+}
+
+    /* DIVS EJ. 4 */
+
+.ej4caja1 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(223, 223, 241);
+    float: right;
+}
+
+.ej4caja2 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(47, 255, 151);
+    float: right;
+}
+
+.ej4caja3 {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(252, 0, 189, 0.288);
+    float: left;
+}
+
+    /* DIVS EJ. 5 */
+
+.ej5caja1 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(223, 223, 241);
+    float: right;
+}
+
+.ej5caja2 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(47, 255, 151);
+    float: right;
+}
+
+.ej5caja3 {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(252, 0, 189, 0.288);
+}
+
+    /* DIVS EJ. 6 */
+
+.ej6caja1 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(175, 175, 175); 
+    position: absolute;
+}
+
+.ej6caja2 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(238, 213, 102);
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+    /* DIVS EJ. 7 */
+
+.ej7caja1 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(175, 175, 175); 
+    position: absolute; z-index: 100;
+}
+
+.ej7caja2 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(238, 213, 102);
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
