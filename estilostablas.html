@@ -5,7 +5,7 @@
     	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 		<title>CSS | Estilos en tablas HTML</title>
 			<link rel = "icon" href = "pictures/logobienperro.jpg">  
-    				<link rel="stylesheet" href="./css/estilostablas.css">
+    				<link rel="stylesheet" href="./css/estilostablascss.css">
    					<script src="https://public.stewart.com/seth/js/prefixfree.min.js"></script>
     						<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     							<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,43 +16,29 @@
       <!-- MENÚ CSS -->
 
       <div id="container">
-      <ul id="menu">
-	 <li style="text-align: center; width: 50px;"><a href="javascript:history.back()" style="margin-left: -7px;">🢀</a>
-          <li style="text-align: center; width: 80px;"><a href="https://sergioencinas.github.io/AW2122/">Inicio</a>
-        <li style="text-align: center; width: 80px;"><a href="#">HTTP</a>
-          <ul>
-            <li><a href="#">Etiquetas básicas</a></li>
-            <li><a href="./tablas.html">Tablas</a></li>
-            <li><a href="#">Suspendisse fringilla</a></li>
-          </ul>
-        </li>
-        <li style="text-align: center; width: 80px;"><a href="#">CSS</a>
-          <ul>
-            <li><a href="./estilostablas.html">Estilos en tablas HTML</a></li>
-            <li><a href="./ejcontenedores.html">Contenedores</a></li>
-            <li><a href="#">Suspendisse fringilla</a></li>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Maecenas lacinia sem</a></li>
-            <li><a href="#">Suspendisse fringilla</a></li>
-          </ul>
-        </li>
-        <li style="text-align: center; width: 80px;"><a href="#">JS</a>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Maecenas lacinia sem</a></li>
-            <li><a href="#">Suspendisse fringilla</a></li>
-          </ul>
-        </li>
-        <li style="text-align: center; width: 80px;"><a href="#">PHP</a>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Maecenas dignissim fermentum luctus</a></li>
-            <li><a href="#">Suspendisse fringilla</a></li>
-          </ul>
-        </li>
-        <li style="text-align: center; width: 110px;"><a href="#">Soporte</a></li>
-        <img class="logo" src="./pictures/logobienperro.jpg">
-      </ul>
+        <ul id="menu">
+          <li><a href="#">HTML</a>
+            <ul>
+              <li><a href="./tablas.html">Tablas</a></li>
+              <li><a href="#">Contenedores</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CSS</a>
+            <ul>
+              <li><a href="./estilostablas.html">Estilos en tablas HTML</a></li>
+              <li><a href="./ejcontenedores.html">Contenedores</a></li>
+              <li><a href="#">Formularios</a></li>
+            </ul>
+          </li>
+          <li><a href="#">JS</a></li>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </div>
+      <div class="containerv2">
+      <img class="logo" src="./pictures/logobienperro.jpg"  onclick= "location.href='https://sergioencinas.github.io/AW2122/index.html;'" target= "_blank">
+      </div>
+
 
 <!-- HEADER -->
 
@@ -60,7 +46,7 @@
 	<div class="overlay">
 <h1>CSS</h1>
 <h2>Estilos en tablas</h2>
-<h4>En este artículo aprenderemos a aplicar 4 estilos a tablas realizadas en HTML gracias al lenguaje de hoja de estilos CSS </h4>
+<h4>En este artículo aprenderemos a aplicar 3 estilos a tablas realizadas en HTML gracias al lenguaje de hoja de estilos CSS </h4>
 		</div>
 </header>
 <br>
@@ -73,24 +59,24 @@
     <br><h2 style="text-align: center; color: rgb(0, 0, 0);">Esta es la tabla HTML de la que partimos:</h2> <br>
     <img style="margin: auto" src="pictures/tablaorgg.png">
       </div>
-      <div class="boxestilo1">
+    <center>  <div class="boxestilo1">
         <h4 id="textoizq"><b>Primer estilo:</b><br><br>td,th {<br>padding: 0.5px;<br>border: 1px solid rgba(0,0,0,0.2);<br>}</h4>
         <img src="pictures/estilo1.jpg" style="margin-right: 10%;" width="400">
         <h5 id="textodch"><b>td,th {} --> </b>lo que haya entre los corchetes afectará a los elementos "td" y "th"<br><b>padding: 0.5px --> </b>crea un espacio entre el borde y el contenido del elemento de 0.5 píxeles<br><b>border 1px solid rgba(0,0,0,0.2) --> </b> añade un borde de un píxel del color indicado <br></h5>
-      </div>
+      </div></center>
 
 
-      <div class="boxestilos1">
+    <center> <div class="boxestilos1">
         <h4 id="textoizq"><b>Segundo estilo:</b><br><br>table, td, th { <br>border: 1px solid #ddd;<br>text-align: left;<br>}<br><br>table{<br>border-collapse: collapse;<br>widht: 100%<br>}<br><br>th, td {<br>padding: 15px;<br>}</h4>
         <img src="pictures/estilo2.jpg" style="margin-right: 0%;" width="600">
         <h5 id="textodch"><b><b>text-align: left --></b> Alinea el texto a la izquierda<br><b>border-collapse: collapse --></b> Fusiona los bordes de la tabla<br><b>widht: 100% --></b> Asigna el tamaño completo del elemento <br></h5>
-      </div>
+      </div></center>
  
-      <div class="boxestilos1">
+      <center> <div class="boxestilos1">
         <h4 id="textoizq"><b>Tercer estilo:</b><br><br>table {<br>border-collapse: collapse<br>widht: 100%;<br>}<br><br>th, td <br>text-align: left;<br>padding: 8px;<br>}<br><br>tr: hover {background-color: yellow}<br></h4>
-        <img src="pictures/estilo3.jpg" style= "margin-right: 0%;" width="510">
+        <img src="pictures/estilo2.jpg.png" style= "margin-right: 0%;" width="510">
         <h5 id="textodch"><b>border-collapse: collapse --></b> Fusiona los bordes de la tabla<br><b>widht: 100% --></b> Asigna el tamaño completo del elemento <br><b>text-align: left --></b> Alinea el texto a la izquierda<br>Padding: 8px --></br></h5>
-      </div>
+      </div></center>
 </div></div>
   
 	</body>
