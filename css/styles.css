@@ -1,6 +1,6 @@
 body {
 	padding: 30px 100px;
-	font-family: "Helvetica Neue", helvetica, arial; 
+	font-family: "Helvetica Neue", helvetica, arial; }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -12,7 +12,7 @@ body {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	position: relative;
 	margin-top: 5%;
-	width: 50%;
+	width: 20%;
 	border-radius: 7px;
 	background: rgb(255, 255, 255);
 	box-shadow:
@@ -306,33 +306,13 @@ border-radius: 30px 10px;
 
 .grad1 {
     	margin: auto;
-		height: 220px;
+		height: 120px;
 		background-image: url(https://i.kinja-img.com/gawker-media/image/upload/m16jl9z22q0qkbgslzkx.jpg);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		border-radius: 20px;
     	padding: 70px
 	  }
-	
-	.grad2 {
-		text-align: center;
-		height: 47px;
-		width: 15%;
-		border: 3px;
-    	border-radius: 20px 20px 10px 10px;
-		background: rgb(238, 237, 237);
-		color: #000000;
-		cursor: context-menu ;
-		margin: auto;
-		margin-top: 28px;
-		text-align: center; 
-		text-shadow: 2px 2px 2px rgb(255, 255, 255); 
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		font-size: 30px;
-		box-shadow: 0 -2em 6em rgba(0,0,0,0.1),
-                    0 0 2px 2px rgb(255,255,255),
-                    0.6em 0.6em 0.6em rgba(0,0,0,0.3);
-	}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -351,7 +331,8 @@ border-radius: 30px 10px;
   position:relative;
   margin: auto;
   margin-top: 5%;
-	}
+  margin-left: 25%;
+}
 
 .card1 {
   width: 80%;
@@ -538,15 +519,7 @@ border-radius: 30px 10px;
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--  TABLE 3  --*/
-  
-.cardss {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 2rem;
-	margin: 4rem 5vw;
-	padding: 0;
-	list-style-type: none;
-  }
+
   .card3 {
 	background: #191c29;
 	padding: 3px;
@@ -555,22 +528,25 @@ border-radius: 30px 10px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	display: flex;
 	font-size: 1.5em;
 	color: rgb(88 199 250 / 0%);
 	cursor: pointer;
 	font-family: cursive;
-	height: 100%;
-	width: 80%
+	width: 104%;
+	height: 102%;
   }
   
   .card3:hover {
 	color: rgb(88 199 250 / 100%);
 	transition: color 1s;
+    width: 104%;
+	height: 102%;
   }
   .card3:hover:before, .card:hover:after {
 	animation: none;
 	opacity: 0;
+    width: 104%;
+	height: 102%;
   }
   
   
@@ -616,12 +592,4 @@ border-radius: 30px 10px;
 	100% {
 	  --rotate: 360deg;
 	}
-  }
-  
-  .acard3 {
-	color: #212534;
-	text-decoration: none;
-	font-family: sans-serif;
-	font-weight: bold;
-	margin-top: 2rem;
   }
