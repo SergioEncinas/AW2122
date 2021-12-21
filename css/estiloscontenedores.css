@@ -328,8 +328,9 @@ margin-bottom: 30px;
 
 border-radius: 5% 5% 0 0;
 background-image: linear-gradient( 135deg, #22b8dd6b 20%, #0151ffbd 100%);
-width: 10%;
-
+width: 100%;
+height: 500px;
+	
 }
 .overlay{
 height: 25px;
